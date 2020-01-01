@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.px.entity.User" table="Users">
+ 		<id name="adminID" column="adminID">
+ 			<generator class="native"></generator>
+ 		</id>
+ 		<property name="username" column="username"></property>
+ 		<property name="password" column="password"></property>
+ 		<property name="number" column="number"></property>
+ 		<property name="academic" column="academic"></property>
+ 		<property name="tel" column="tel"></property>
+ 		<property name="email" column="email"></property>
+ 		<property name="grade" column="grade"></property>
+ 		<property name="newpassword" column="newpassword"></property>
+ 	</class>
+ </hibernate-mapping>

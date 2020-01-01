@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.px.entity.AssetStatus" table="t_AssetStatus">
+ 		<id name="a_status_id" column="a_status_id">
+ 			<generator class="native"></generator>
+ 		</id>
+ 		<property name="a_status" column="a_status"></property>
+ 		<property name="a_outputDate" column="a_outputDate"></property>
+ 		<property name="a_out_address" column="a_out_address"></property>
+ 	</class>
+ </hibernate-mapping>

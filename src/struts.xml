@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 配置文件上传大小 -->
+	<constant name="struts.multipart.maxSize" value="209715200"></constant>
+	
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="user_*" class="userAction" method="{1}">
+			<result  name="loginsuccess">/WEB-INF/self/manage.jsp</result>
+			<result  name="login">/login.jsp</result>
+			<!-- 首页管理登录 -->
+			<!-- 修改管理员密码 -->
+			<result name="passwd">/WEB-INF/self/revisePasswd.jsp</result>
+			<result name="revisePasswdsuccess">/WEB-INF/public/success.jsp</result>
+			<result name="revisePasswderror">/WEB-INF/public/error.jsp</result>
+		</action>
+		
+		<action name="firm_*" class="firmAction" method="{1}">
+			<result name="toAddPage">/WEB-INF/Firm/addUser.jsp</result>
+			<result name="add">/WEB-INF/Firm/listPage.jsp</result>
+			<!-- 删除之后 -->
+			<result name="delete" >/WEB-INF/Firm/listPage.jsp</result>
+			<!-- 修改之后 -->
+			<result name="revise" >/WEB-INF/Firm/revise.jsp</result>
+			<result name="update">/WEB-INF/Firm/listPage.jsp</result>
+			<!-- 公司列表+分页效果 -->
+			<result name="listPage">/WEB-INF/Firm/listPage.jsp</result>
+			
+			<!-- 条件查询
+			配置input -->
+			<result name="input">/WEB-INF/public/error.jsp</result>
+		</action>
+		<action name="asset_*" class="assetInFoAction" method="{1}">
+			<result name="AssetInfo">/WEB-INF/Asset/Asset.jsp</result>
+			<!-- 跳转到添加器材的Action -->
+			<result name="toAddPage">/WEB-INF/Asset/addAsset.jsp</result>
+			<!-- 一级器材类别 -->
+			<result name="oneType">/WEB-INF/Asset/addAsset.jsp</result>
+			<!-- 器材添加成功 -->
+			<result name="toListPage">/WEB-INF/public/success.jsp</result>
+		</action>
+		<!-- 系统管理 -->
+		<action name="system_*" class="systemAction" method="{1}"> 
+			<result name="information">/WEB-INF/system/information.jsp</result>
+			<result name="toSystem">/WEB-INF/system/log.jsp</result>
+		</action>
+		<!-- 分析 -->
+		<action name="analysis_*" class="analysisAction" method="{1}">
+			<result name="Analysis">/WEB-INF/analysis/a_analysis.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.px.entity.AssetInFo" table="t_AssetInFo">
+ 		<id name="a_id" column="a_id">
+ 			<generator class="native"></generator>
+ 		</id>
+ 		<property name="a_name" column="a_name"></property>
+ 		<property name="a_type_id" column="a_type_id"></property>
+ 		<property name="a_status_id" column="a_status_id"></property>
+ 		<property name="a_use" column="a_use"></property>
+ 		<property name="a_seller_id" column="a_seller_id"></property>
+ 		<property name="a_address" column="a_address"></property>
+ 		<property name="a_application" column="a_application"></property>
+ 		<property name="a_money" column="a_money"></property>
+ 		<property name="a_inputdate" column="a_inputdate"></property>
+ 		<property name="a_userLife" column="a_userLife"></property>
+ 	</class>
+ </hibernate-mapping>

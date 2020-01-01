@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.px.entity.AssetType" table="t_AssetType">
+ 		<id name="a_type_id" column="a_type_id">
+ 			<generator class="native"></generator>
+ 		</id>
+ 		<property name="type_name" column="type_name"></property>
+ 		<set name="setAssetInFo" inverse="true">
+ 			<key column="a_type_id">
+ 			</key>
+ 			<one-to-many class="com.px.entity.AssetInFo"></one-to-many>
+ 		</set>
+ 		<set name="setTwoAssetType" inverse="true">
+ 			<key column="a_one_id"></key>
+ 			<one-to-many class="com.px.entity.TwoAssetType"></one-to-many>
+ 		</set>
+ 	</class>
+ </hibernate-mapping>

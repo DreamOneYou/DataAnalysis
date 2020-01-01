@@ -1,0 +1,44 @@
+/* CSS Document */
+body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0 auto;
+	padding:0;
+	font-family:"΢���ź�", "����", Arial, sans-serif;
+}
+ul,li{
+	list-style:none;
+}
+img{border:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+a{
+	outline:0px;
+}
+.add_user{
+	width:80%;
+	height:300px;
+	float:left;
+}
+.content_add{
+	width:77%;
+	float: left;
+	margin-left:10px;
+	background-color:#fff;
+}
+.add_table{
+	margin-top:15px;
+	margin-left:10px;
+	float: left;
+	line-height: 30px;
+
+}
+.add_table td{
+	text-align:center;
+	font-family: "楷体";
+	font-size:16px;
+}
+.add_table input{
+	height:25px;
+	width: 200px;
+	border: 1px solid #61C5FE;
+}
+

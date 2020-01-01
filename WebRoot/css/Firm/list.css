@@ -1,0 +1,45 @@
+/* CSS Document */
+body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0 auto;
+	padding:0;
+	font-family:"΢���ź�", "����", Arial, sans-serif;
+}
+ul,li{
+	list-style:none;
+}
+img{border:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+a{
+	outline:0px;
+}
+.list_table{
+	margin-top:5px;
+	width:98%;
+	font-size: 12px;
+	font-family: "宋体";
+	border-color: #298CCF;
+	line-height: 20px;
+	background-color: #fff;
+}
+.list_tr{
+	background-color: #F0F0F0;
+	font-size: 13px;
+	font-style:inherit;
+	font-weight:bolder;
+	font-family: "楷体";
+	border:1px solid  #298CCF;
+}
+.list_table td{
+	border:1px solid #098495;
+	text-align: center;
+	
+}
+.list_user{
+	width:98%;
+}
+.page{
+	line-height: 20px;
+	text-align: right;
+	height:20px;
+}

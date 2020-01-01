@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.px.entity.ThreeAssetType" table="t_threeAssetType">
+ 		<id name="a_threetype_id" column="a_threetype_id">
+ 			<generator class="native"></generator>
+ 		</id>
+ 		<property name="type_name" column="type_name"></property>
+ 		<property name="a_two_id" column="a_two_id"></property>
+ 		<many-to-one class="com.px.entity.TwoAssetType" name="twoAssetType" column="a_two_id" insert="false" update="false"/>
+ 	</class>
+ </hibernate-mapping>

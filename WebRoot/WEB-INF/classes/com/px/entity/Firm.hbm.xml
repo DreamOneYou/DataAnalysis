@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.px.entity.Firm" table="t_firm">
+ 		<id name="sid" column="sid">
+ 			<generator class="native"></generator>
+ 		</id>
+ 		<property name="firm_name" column="firm_name"></property>
+ 		<property name="s_name" column="s_name"></property>
+ 		<property name="s_move_tel" column="s_move_tel"></property>
+ 		<property name="s_fixed_tel" column="s_fixed_tel"></property>
+ 		<property name="s_email" column="s_email"></property>
+ 		<property name="s_city" column="s_city"></property>
+ 		<property name="s_credit" column="s_credit"></property>
+ 		<property name="s_code" column="s_code"></property>
+ 		<property name="s_web" column="s_web"></property>
+ 	</class>
+ </hibernate-mapping>

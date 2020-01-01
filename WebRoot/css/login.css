@@ -1,0 +1,68 @@
+/* CSS Document */
+body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0 auto;
+	padding:0;
+	font-family:"Î¢ÈíÑÅºÚ", "ËÎÌå", Arial, sans-serif;
+}
+ul,li{
+	list-style:none;
+}
+img{border:none}
+a{text-decoration:none}body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0 auto;
+	padding:0;
+	font-family:"Î¢ÈíÑÅºÚ", "ËÎÌå", Arial, sans-serif;
+}
+ul,li{
+	list-style:none;
+}
+img{border:none}
+a{text-decoration:none}
+body{
+	background-color:#EAF3FD;
+}
+#head{
+	width:600px;
+	height:80px;
+	margin-top:70px;
+}
+#middle{
+	height:400px;
+	background-image:url(../image/¿Æ¼¼.JPG);
+}
+.mid_one{
+	width:600px;
+	height:400px;
+	background:url(../image/center.gif) no-repeat;
+}
+.mid_left{
+	width:300px;
+	height:200px;
+	float:right;
+	margin-right:50px;
+	margin-top:80px;
+}
+.logintitle{
+	font-size:24px;
+	color:#333;
+	padding-bottom:20px;
+}
+.trclass{
+	height:40px;
+	text-align:right;
+	padding-right:5px;
+}
+.button{
+	width:120px;
+	height:36px;
+	line-height:22px;
+	background-color:#0000FF;
+	color:#00FF00;
+}
+#foot{
+	width:600px;
+	height:20px;	
+	font-size:13px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif,"ËÎÌå";
+}

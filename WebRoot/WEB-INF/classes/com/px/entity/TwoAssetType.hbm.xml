@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.px.entity.TwoAssetType" table="t_twoAssetType">
+ 		<id name="a_twotype_id" column="a_twotype_id">
+ 			<generator class="native"></generator>
+ 		</id>
+ 		<property name="type_name" column="type_name"></property>
+ 		<property name="a_one_id" column="a_one_id"></property>
+ 		<many-to-one name="assetType" class="com.px.entity.AssetType" column="a_one_id" insert="false" update="false" />
+ 		<set name="setThreeAssetType" inverse="true">
+ 			<key column="a_two_id"></key>
+ 			<one-to-many class="com.px.entity.ThreeAssetType" />
+ 		</set>
+ 	</class>
+ </hibernate-mapping>
